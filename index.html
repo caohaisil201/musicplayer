@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="app">
+            <div class="header">
+                <h5>Now playing</h5>
+                <h4 class="music-name">This is music name</h4>
+            </div>
+            <div class="dashboard">
+                <div class="cd">
+                    <img src="./assets/images/thumbnail.jpg" alt="thumbnail" />
+                </div>
+                <div class="control">
+                    <div class="control-item replay">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                    <div class="control-item prev">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </div>
+                    <div class="control-item play-control">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-solid fa-circle-pause hide"></i>
+                    </div>
+                    <div class="control-item next">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+                    <div class="control-item random">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                </div>
+                <input class="slider" value="0" type="range" step="0.5" min="0" max="100"/>
+                <audio class="hide music">
+                    <source src="" type="audio/mp3" />
+                </audio>
+            </div>
+            <div class="list">
+                
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>

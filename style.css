@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap");
+
+:root {
+    --primary-color: #eb1b4c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.hide{
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+    .app {
+        margin: 0 auto;
+        width: 500px;
+        height: 700px;
+    }
+}
+
+.header {
+    /* position: fixed; */
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+	height: 30px;
+}
+
+.header h5 {
+    color: var(--primary-color);
+}
+
+.dashboard{
+    /* margin-top: 50px; */
+	height: 350px;
+    /* position: absolute; */
+    /* position: fixed; */
+}
+
+.dashboard .cd {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: width 0.1s linear, height 0.1s linear;
+}
+
+
+.dashboard .cd img {
+    display: block;
+    animation: rotate 8s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.control {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.control .control-item {
+    margin: 20px;
+    cursor: pointer;
+}
+
+.control .control-item.play-control {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+/*music slider custom*/
+.dashboard .slider{
+    display: block;
+    width: 90%;
+	height: 7px;
+    margin: 0 auto;
+	-webkit-appearance: none;
+	border-radius: 5px;
+	background-color: #ddd;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.dashboard .slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 1px;
+	height: 20px;
+	box-shadow: -400px 0 0 400px var(--primary-color);
+}
+
+.list{
+	background-color: #ddd;
+	width: 100%;
+	flex-grow: 1;
+	overflow-y: scroll;
+}
+
+.list .list-item{
+	margin: 15px 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.item-content{
+	display: flex;
+}
+
+.item-content .content-image{
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+}
+
+.content-text span{
+	font-size: 0.7rem;
+}
