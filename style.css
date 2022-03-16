@@ -54,10 +54,8 @@ img {
 }
 
 .dashboard{
-    /* margin-top: 50px; */
 	height: 350px;
-    /* position: absolute; */
-    /* position: fixed; */
+    transition: height 0.1s linear;
 }
 
 .dashboard .cd {
@@ -128,6 +126,10 @@ img {
 	flex-grow: 1;
 	overflow-y: scroll;
 }
+
+/* list::-webkit-scrollbar{
+    width: 10px;
+} */
 
 .list .list-item{
 	margin: 15px 20px;

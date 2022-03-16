@@ -40,46 +40,52 @@ const app = {
             image: "./assets/images/NDT.jpg",
         },
         {
-            name: "Ngày đầu tiên",
-            singer: "Đức Phúc",
-            path: "./assets/musics/NgayDauTien-DucPhuc.mp3",
-            image: "./assets/images/NDT.jpg",
+            name: "Chân mây",
+            singer: "K-ICM, Phương Thanh",
+            path: "./assets/musics/ChanMay-KICMPhuongThanh.mp3",
+            image: "./assets/images/CM.jpg",
         },
         {
-            name: "Ngày đầu tiên",
-            singer: "Đức Phúc",
-            path: "./assets/musics/NgayDauTien-DucPhuc.mp3",
-            image: "./assets/images/NDT.jpg",
+            name: "Yêu không cần ép",
+            singer: "Bảo Anh",
+            path: "./assets/musics/YeuKhongCanEp-BaoAnh.mp3",
+            image: "./assets/images/YKCE.jpg",
         },
         {
-            name: "Ngày đầu tiên",
-            singer: "Đức Phúc",
-            path: "./assets/musics/NgayDauTien-DucPhuc.mp3",
-            image: "./assets/images/NDT.jpg",
+            name: "Ngại gì mà anh",
+            singer: "Huy Vạc",
+            path: "./assets/musics/NgaiGiMaAnh-HuyVac.mp3",
+            image: "./assets/images/NGMA.jpg",
         },
         {
-            name: "Ngày đầu tiên",
-            singer: "Đức Phúc",
-            path: "./assets/musics/NgayDauTien-DucPhuc.mp3",
-            image: "./assets/images/NDT.jpg",
+            name: "Đau nhất là lặng im",
+            singer: "Erik",
+            path: "./assets/musics/DauNhatLaLangIm-ERIK.mp3",
+            image: "./assets/images/DNLLI.jpg",
         },
         {
-            name: "Ngày đầu tiên",
-            singer: "Đức Phúc",
-            path: "./assets/musics/NgayDauTien-DucPhuc.mp3",
-            image: "./assets/images/NDT.jpg",
+            name: "Ngọt",
+            singer: "JayM",
+            path: "./assets/musics/Ngot-JayM.mp3",
+            image: "./assets/images/Ngot.jpg",
         },
         {
-            name: "Ngày đầu tiên",
-            singer: "Đức Phúc",
-            path: "./assets/musics/NgayDauTien-DucPhuc.mp3",
-            image: "./assets/images/NDT.jpg",
+            name: "Cổ tích",
+            singer: "JSOL",
+            path: "./assets/musics/CoTich-JSOL.mp3",
+            image: "./assets/images/CT.jpg",
         },
         {
-            name: "Ngày đầu tiên",
-            singer: "Đức Phúc",
-            path: "./assets/musics/NgayDauTien-DucPhuc.mp3",
-            image: "./assets/images/NDT.jpg",
+            name: "Mê",
+            singer: "Hoàng Duyên",
+            path: "./assets/musics/Me-HoangDuyen.mp3",
+            image: "./assets/images/Me.jpg",
+        },
+        {
+            name: "See Tình",
+            singer: "Hoàng Thùy Linh",
+            path: "./assets/musics/SeeTinh-HoangThuyLinh.mp3",
+            image: "./assets/images/ST.jpg",
         },
     ],
 
@@ -166,6 +172,7 @@ const app = {
         });
 
         //onscroll for list
+        //this is so many bug :)))))
         list.addEventListener('scroll', function() {
             let newValueScroll  =  list.scrollTop;
             if(newValueScroll>oldValueScroll){
