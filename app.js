@@ -220,6 +220,11 @@ const app = {
         audioMusic.src = this.songs[this.currentIndex].path;
         cd.src = this.songs[this.currentIndex].image;
         $('.header .music-name').innerText = this.songs[this.currentIndex].name;
+        let items = $$('.list-item');
+        items.forEach((item)=>{
+            item.classList.remove('playing');
+        })
+        items[this.currentIndex].classList.add('playing');
     },
 
     setupSongs() {
@@ -243,8 +248,8 @@ const app = {
     },
 
     start() {
-        this.setupMusic();
         this.setupSongs();
+        this.setupMusic();
         this.eventHandles();
     },
 };

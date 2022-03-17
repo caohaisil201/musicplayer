@@ -34,10 +34,17 @@ img {
 }
 
 @media only screen and (min-width: 600px) {
+    body{
+        background-color:rgba(235, 27, 76,0.7);
+    }
+
     .app {
-        margin: 0 auto;
-        width: 500px;
-        height: 700px;
+        background-color: #fff;
+        margin: 10px auto;
+        width: 400px;
+        height:650px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
     }
 }
 
@@ -127,9 +134,19 @@ img {
 	overflow-y: scroll;
 }
 
-/* list::-webkit-scrollbar{
-    width: 10px;
-} */
+div.list::-webkit-scrollbar{
+    width: 5px;
+}
+
+div.list::-webkit-scrollbar-thumb{
+    background-color: #666;
+    border-radius: 100px;
+}
+
+div.list::-webkit-scrollbar-track{
+    background-color: #eee;
+    border-radius: 100px;
+}
 
 .list .list-item{
 	margin: 15px 20px;
@@ -140,6 +157,12 @@ img {
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px;
+    cursor: pointer;
+}
+
+.list .list-item.playing{
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 .item-content{
