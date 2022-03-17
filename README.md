@@ -1,2 +1,2 @@
 # musicplayer
-Music player with HTML, css, Javascript
+Music player for mobile with HTML, CSS, Javascript 
